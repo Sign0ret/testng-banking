@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>testng-banking</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,7 +15,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -22,9 +22,10 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
-      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+      <!-- Maven Surefire Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -35,6 +36,19 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
+
+      <!-- Maven Compiler Plugin (ADDED) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version> <!-- newer version -->
+        <configuration>
+          <source>11</source>  <!-- Adjust according to your Java version -->
+          <target>11</target>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
+
 </project>
