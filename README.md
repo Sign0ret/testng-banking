@@ -20,6 +20,7 @@ git clone https://github.com/Sign0ret/testng-banking.git
 ```
 mvn clean install
 ```
+In case of a failing installation, check which maven-surefire-plugin version works for you.
 3. Run the negative tests which are executed by default via the testng.xml
 ```
 mvn clean test
