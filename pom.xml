@@ -29,25 +29,13 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.5</version>
+        <version>3.2.5</version>   <!-- Adjust version to your mvn version -->
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
-
-      <!-- Maven Compiler Plugin (ADDED) -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version> <!-- newer version -->
-        <configuration>
-          <source>11</source>  <!-- Adjust according to your Java version -->
-          <target>11</target>
-        </configuration>
-      </plugin>
-
     </plugins>
   </build>
 

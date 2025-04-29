@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.506" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.431" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/jdk-21.0.4+7/lib"/>
-    <property name="sun.java.command" value="/home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/surefire/surefirebooter-20250428185235377_3.jar /home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/surefire 2025-04-28T18-52-35_283-jvmRun1 surefire-20250428185235377_1tmp surefire_0-20250428185235377_2tmp"/>
+    <property name="sun.java.command" value="/home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/surefire/surefirebooter-20250428191607852_3.jar /home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/surefire 2025-04-28T19-16-07_771-jvmRun1 surefire-20250428191607852_1tmp surefire_0-20250428191607852_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/test-classes:/home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/classes:/home/sign0ret/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/sign0ret/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/home/sign0ret/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/sign0ret/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/sign0ret/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/surefire/surefirebooter-20250428185235377_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/sign0ret/dev/student/oracle-semester/test/testng/testng-banking/target/surefire/surefirebooter-20250428191607852_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+7-LTS"/>
     <property name="user.name" value="sign0ret"/>
@@ -62,8 +62,8 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 ]]></system-err>
   </testcase>
   <testcase name="testDepositNegativeAmount" classname="com.example.BankAccountTest" time="0.001"/>
-  <testcase name="testInvestMoreThanBalance" classname="com.example.BankAccountTest" time="0.0"/>
+  <testcase name="testInvestMoreThanBalance" classname="com.example.BankAccountTest" time="0.001"/>
   <testcase name="testInvestNegativeAmount" classname="com.example.BankAccountTest" time="0.001"/>
   <testcase name="testWithdrawInsufficientFunds" classname="com.example.BankAccountTest" time="0.001"/>
-  <testcase name="testWithdrawNegativeAmount" classname="com.example.BankAccountTest" time="0.0"/>
+  <testcase name="testWithdrawNegativeAmount" classname="com.example.BankAccountTest" time="0.001"/>
 </testsuite>

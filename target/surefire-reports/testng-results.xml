@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-28T18:52:35 CST" name="GroupSuite" finished-at="2025-04-28T18:52:35 CST" duration-ms="43">
+  <suite started-at="2025-04-28T19:16:08 CST" name="GroupSuite" finished-at="2025-04-28T19:16:08 CST" duration-ms="42">
     <groups>
       <group name="negative">
         <method signature="BankAccountTest.assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="assureInitialBalance" class="com.example.BankAccountTest"/>
@@ -16,13 +16,13 @@
         <method signature="BankAccountTest.assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="assureInitialBalance" class="com.example.BankAccountTest"/>
       </group> <!-- positive -->
     </groups>
-    <test started-at="2025-04-28T18:52:35 CST" name="NegativeTests" finished-at="2025-04-28T18:52:35 CST" duration-ms="43">
+    <test started-at="2025-04-28T19:16:08 CST" name="NegativeTests" finished-at="2025-04-28T19:16:08 CST" duration-ms="42">
       <class name="com.example.BankAccountTest">
-        <test-method signature="assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="assureInitialBalance" finished-at="2025-04-28T18:52:35 CST" duration-ms="5" status="PASS">
+        <test-method signature="assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T19:16:08 CST" name="assureInitialBalance" finished-at="2025-04-28T19:16:08 CST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assureInitialBalance -->
-        <test-method signature="testDepositNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testDepositNegativeAmount" finished-at="2025-04-28T18:52:35 CST" duration-ms="1" status="PASS">
+        <test-method signature="testDepositNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T19:16:08 CST" name="testDepositNegativeAmount" finished-at="2025-04-28T19:16:08 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Deposit must be positive]]>
@@ -67,7 +67,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDepositNegativeAmount -->
-        <test-method signature="testInvestMoreThanBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testInvestMoreThanBalance" finished-at="2025-04-28T18:52:35 CST" duration-ms="0" status="PASS">
+        <test-method signature="testInvestMoreThanBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T19:16:08 CST" name="testInvestMoreThanBalance" finished-at="2025-04-28T19:16:08 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Investment cannot be mora than balance]]>
@@ -112,7 +112,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvestMoreThanBalance -->
-        <test-method signature="testInvestNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testInvestNegativeAmount" finished-at="2025-04-28T18:52:35 CST" duration-ms="1" status="PASS">
+        <test-method signature="testInvestNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T19:16:08 CST" name="testInvestNegativeAmount" finished-at="2025-04-28T19:16:08 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Investment must be positive]]>
@@ -157,7 +157,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvestNegativeAmount -->
-        <test-method signature="testWithdrawInsufficientFunds()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testWithdrawInsufficientFunds" finished-at="2025-04-28T18:52:35 CST" duration-ms="0" status="PASS">
+        <test-method signature="testWithdrawInsufficientFunds()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T19:16:08 CST" name="testWithdrawInsufficientFunds" finished-at="2025-04-28T19:16:08 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Insufficient funds]]>
@@ -202,7 +202,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithdrawInsufficientFunds -->
-        <test-method signature="testWithdrawNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testWithdrawNegativeAmount" finished-at="2025-04-28T18:52:35 CST" duration-ms="1" status="PASS">
+        <test-method signature="testWithdrawNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T19:16:08 CST" name="testWithdrawNegativeAmount" finished-at="2025-04-28T19:16:08 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Withdrawal must be positive]]>
