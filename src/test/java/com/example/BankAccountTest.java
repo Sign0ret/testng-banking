@@ -55,11 +55,12 @@ public class BankAccountTest {
     @Test(groups = {"positive", "negative"})
     public void assureInitialBalance() {
         Assert.assertEquals(account.getBalance(), 0);
+        Assert.assertEquals(account.getInvestment(), 0);
     }
 
     // POSITIVE TESTS.
     
-    // Positive test: Deposit
+    // Positive test: Deposit.
     @Test(groups = {"positive"})
     public void testDeposit() {
         account.deposit(50);
@@ -73,12 +74,12 @@ public class BankAccountTest {
         Assert.assertEquals(account.getBalance(), 20.0);
     }
 
-    // Positive test: Deposit using DataProvider.
-    @Test(dataProvider = "amounts", groups = {"positive"})
-    public void testDepositWithDataProvider(double depositAmount, double expectedBalance) {
-        BankAccount newAccount = new BankAccount(100.0);
-        newAccount.deposit(depositAmount);
-        Assert.assertEquals(newAccount.getBalance(), expectedBalance);
+    // Positive test: Successful Investment.
+    @Test(groups = {"positive"}, dependsOnMethods = "testWithdraw")
+    public void testSuccessfulInvestment() {
+        account.invest(10.0);
+        Assert.assertEquals(account.getInvestment(), 10.0);
+        Assert.assertEquals(account.getBalance(), 10.0);
     }
 
     // NEGATIVE TESTS.
@@ -99,5 +100,19 @@ public class BankAccountTest {
     @Test(groups = {"negative"}, expectedExceptions = IllegalArgumentException.class)
     public void testWithdrawInsufficientFunds() {
         account.withdraw(1000.0);
+    }
+
+    // Negative test: Invest a negative value.
+    @Test(groups = {"negative"}, expectedExceptions = IllegalArgumentException.class)
+    public void testInvestNegativeAmount() {
+        account = new BankAccount(100.0);
+        account.invest(-50.0);
+    }
+
+    // Negative test: Invest more than balance.
+    @Test(groups = {"negative"}, expectedExceptions = IllegalArgumentException.class)
+    public void testInvestMoreThanBalance() {
+        account = new BankAccount(30.0);
+        account.invest(50.0);
     }
 }

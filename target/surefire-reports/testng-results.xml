@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-28T18:05:04 CST" name="GroupSuite" finished-at="2025-04-28T18:05:04 CST" duration-ms="41">
+  <suite started-at="2025-04-28T18:52:35 CST" name="GroupSuite" finished-at="2025-04-28T18:52:35 CST" duration-ms="43">
     <groups>
       <group name="negative">
-        <method signature="BankAccountTest.assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@6107227e]" name="assureInitialBalance" class="com.example.BankAccountTest"/>
-        <method signature="BankAccountTest.testDepositNegativeAmount()[pri:0, instance:com.example.BankAccountTest@6107227e]" name="testDepositNegativeAmount" class="com.example.BankAccountTest"/>
-        <method signature="BankAccountTest.testWithdrawInsufficientFunds()[pri:0, instance:com.example.BankAccountTest@6107227e]" name="testWithdrawInsufficientFunds" class="com.example.BankAccountTest"/>
-        <method signature="BankAccountTest.testWithdrawNegativeAmount()[pri:0, instance:com.example.BankAccountTest@6107227e]" name="testWithdrawNegativeAmount" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="assureInitialBalance" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.testDepositNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="testDepositNegativeAmount" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.testInvestMoreThanBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="testInvestMoreThanBalance" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.testInvestNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="testInvestNegativeAmount" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.testWithdrawInsufficientFunds()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="testWithdrawInsufficientFunds" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.testWithdrawNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="testWithdrawNegativeAmount" class="com.example.BankAccountTest"/>
       </group> <!-- negative -->
       <group name="positive">
-        <method signature="BankAccountTest.assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@6107227e]" name="assureInitialBalance" class="com.example.BankAccountTest"/>
+        <method signature="BankAccountTest.assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" name="assureInitialBalance" class="com.example.BankAccountTest"/>
       </group> <!-- positive -->
     </groups>
-    <test started-at="2025-04-28T18:05:04 CST" name="NegativeTests" finished-at="2025-04-28T18:05:04 CST" duration-ms="41">
+    <test started-at="2025-04-28T18:52:35 CST" name="NegativeTests" finished-at="2025-04-28T18:52:35 CST" duration-ms="43">
       <class name="com.example.BankAccountTest">
-        <test-method signature="assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@6107227e]" started-at="2025-04-28T18:05:04 CST" name="assureInitialBalance" finished-at="2025-04-28T18:05:04 CST" duration-ms="5" status="PASS">
+        <test-method signature="assureInitialBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="assureInitialBalance" finished-at="2025-04-28T18:52:35 CST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assureInitialBalance -->
-        <test-method signature="testDepositNegativeAmount()[pri:0, instance:com.example.BankAccountTest@6107227e]" started-at="2025-04-28T18:05:04 CST" name="testDepositNegativeAmount" finished-at="2025-04-28T18:05:04 CST" duration-ms="1" status="PASS">
+        <test-method signature="testDepositNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testDepositNegativeAmount" finished-at="2025-04-28T18:52:35 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Deposit must be positive]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Deposit must be positive
-at com.example.BankAccount.deposit(BankAccount.java:11)
-at com.example.BankAccountTest.testDepositNegativeAmount(BankAccountTest.java:89)
+at com.example.BankAccount.deposit(BankAccount.java:13)
+at com.example.BankAccountTest.testDepositNegativeAmount(BankAccountTest.java:90)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -65,15 +67,105 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDepositNegativeAmount -->
-        <test-method signature="testWithdrawInsufficientFunds()[pri:0, instance:com.example.BankAccountTest@6107227e]" started-at="2025-04-28T18:05:04 CST" name="testWithdrawInsufficientFunds" finished-at="2025-04-28T18:05:04 CST" duration-ms="1" status="PASS">
+        <test-method signature="testInvestMoreThanBalance()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testInvestMoreThanBalance" finished-at="2025-04-28T18:52:35 CST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Investment cannot be mora than balance]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Investment cannot be mora than balance
+at com.example.BankAccount.invest(BankAccount.java:30)
+at com.example.BankAccountTest.testInvestMoreThanBalance(BankAccountTest.java:116)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvestMoreThanBalance -->
+        <test-method signature="testInvestNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testInvestNegativeAmount" finished-at="2025-04-28T18:52:35 CST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Investment must be positive]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Investment must be positive
+at com.example.BankAccount.invest(BankAccount.java:29)
+at com.example.BankAccountTest.testInvestNegativeAmount(BankAccountTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvestNegativeAmount -->
+        <test-method signature="testWithdrawInsufficientFunds()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testWithdrawInsufficientFunds" finished-at="2025-04-28T18:52:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Insufficient funds]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Insufficient funds
-at com.example.BankAccount.withdraw(BankAccount.java:17)
-at com.example.BankAccountTest.testWithdrawInsufficientFunds(BankAccountTest.java:101)
+at com.example.BankAccount.withdraw(BankAccount.java:19)
+at com.example.BankAccountTest.testWithdrawInsufficientFunds(BankAccountTest.java:102)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -110,15 +202,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithdrawInsufficientFunds -->
-        <test-method signature="testWithdrawNegativeAmount()[pri:0, instance:com.example.BankAccountTest@6107227e]" started-at="2025-04-28T18:05:04 CST" name="testWithdrawNegativeAmount" finished-at="2025-04-28T18:05:04 CST" duration-ms="1" status="PASS">
+        <test-method signature="testWithdrawNegativeAmount()[pri:0, instance:com.example.BankAccountTest@15761df8]" started-at="2025-04-28T18:52:35 CST" name="testWithdrawNegativeAmount" finished-at="2025-04-28T18:52:35 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Withdrawal must be positive]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Withdrawal must be positive
-at com.example.BankAccount.withdraw(BankAccount.java:16)
-at com.example.BankAccountTest.testWithdrawNegativeAmount(BankAccountTest.java:95)
+at com.example.BankAccount.withdraw(BankAccount.java:18)
+at com.example.BankAccountTest.testWithdrawNegativeAmount(BankAccountTest.java:96)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
