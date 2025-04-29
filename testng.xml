@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GroupSuite">
+    <test name="NegativeTests">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.BankAccountTest" />
+        </classes>
+    </test>
+    <!-- <test name="PositiveTests">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.BankAccountTest" />
+        </classes>
+    </test> -->
+</suite>
